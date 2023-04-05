@@ -20,9 +20,9 @@ def sum_series(n,first=0,second=1):
   elif first ==2 and second==1:
    return lucas(n)
   else:
-   if n ==first:
+   if n ==0:
     return first
-   if n==second:
+   if n==1:
     return second
    else:
     return sum_series(n-1,first,second)+sum_series(n-2,first,second)
